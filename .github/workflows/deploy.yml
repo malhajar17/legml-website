@@ -1,0 +1,26 @@
+name: Deploy on Server
+
+on:
+  push:
+    branches: [ main ]  # Trigger on push to main branch
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Set up SSH key
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/deploy_key
+          chmod 600 ~/.ssh/deploy_key
+          echo -e "Host server\n\tHostName ${{ secrets.SSH_HOST }}\n\tUser ${{ secrets.SSH_USER }}\n\tPort ${{ secrets.SSH_PORT }}\n\tIdentityFile ~/.ssh/deploy_key\n\tStrictHostKeyChecking no" > ~/.ssh/config
+      
+      - name: Deploy on server
+        run: |
+          # Connect to the server and run the deployment commands
+          ssh server "cd ${{ secrets.DEPLOY_PATH }} && \
+                     git pull origin main && \
+                     npm ci && \
+                     npm run build && \
+                     pm2 reload legml-website"
