@@ -2,7 +2,7 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { X, Sparkles } from "lucide-react";
-import { translations } from "../lib/translations";
+import { translations } from "../../lib/translations";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -78,17 +78,23 @@ export default function MobileMenu({
 
       {/* Menu Links */}
       <div className="flex flex-col space-y-6 text-lg">
-        <a href="#" className={`transition-colors ${menuItemClass}`}>
+        <a href="/home" className={`transition-colors ${menuItemClass}`}>
           {t.nav.home}
         </a>
-        <a href="#features" className={`transition-colors ${menuItemClass}`}>
+        <a href="/features" className={`transition-colors ${menuItemClass}`}>
           {t.nav.features}
         </a>
-        <a href="#pricing" className={`transition-colors ${menuItemClass}`}>
+        <a href="/pricing" className={`transition-colors ${menuItemClass}`}>
           {t.nav.pricing}
         </a>
-        <a href="#blog" className={`transition-colors ${menuItemClass}`}>
+        <a href="/mo" className={`transition-colors ${menuItemClass}`}>
+          Mo'
+        </a>
+        <a href="/blog" className={`transition-colors ${menuItemClass}`}>
           {t.nav.blog}
+        </a>
+        <a href="/contact" className={`transition-colors ${menuItemClass}`}>
+          Contact
         </a>
       </div>
 

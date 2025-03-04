@@ -67,28 +67,11 @@ export const translations = {
         members: [
           {
             name: "Mohamad Alhajar",
-            position: "CTO & Fondateur",
+            position: "CEO & Fondateur",
             linkText: "LinkedIn",
             linkUrl: "https://www.linkedin.com/in/mohamad-alhajar/",
             imageUrl:
               "https://legmlweb.blob.core.windows.net/founders/Mo.jpeg?sp=r&st=2025-02-25T13:51:32Z&se=2028-02-25T21:51:32Z&spr=https&sv=2022-11-02&sr=c&sig=U%2F6ixpdRxLXda3wK9naR0mYYx6AfcAja0Kc4f0WF%2B5s%3D"
-          },
-          {
-            name: "Alexandre Lavallee",
-            position: "CEO & Fondateur",
-            linkText: "LinkedIn",
-            linkUrl: "https://www.linkedin.com/in/alexandrelavallee/",
-            imageUrl:
-              "https://legmlweb.blob.core.windows.net/founders/alex.jpeg?sp=r&st=2025-02-25T13:51:32Z&se=2028-02-25T21:51:32Z&spr=https&sv=2022-11-02&sr=c&sig=U%2F6ixpdRxLXda3wK9naR0mYYx6AfcAja0Kc4f0WF%2B5s%3D"
-          },
-          {
-            name: "Romain Crema",
-            position: "CSO & Fondateur",
-            linkText: "LinkedIn",
-            linkUrl: "https://www.linkedin.com/in/romaincremamodernselling/",
-            link: "LinkedIn",
-            imageUrl:
-              "https://legmlweb.blob.core.windows.net/founders/Romain.jpeg?sp=r&st=2025-02-25T13:51:32Z&se=2028-02-25T21:51:32Z&spr=https&sv=2022-11-02&sr=c&sig=U%2F6ixpdRxLXda3wK9naR0mYYx6AfcAja0Kc4f0WF%2B5s%3D"
           }
         ]
       },
@@ -171,27 +154,11 @@ export const translations = {
         members: [
           {
             name: "Mohamad Alhajar",
-            position: "CTO & Founder",
+            position: "CEO & Founder",
             linkText: "LinkedIn",
             linkUrl: "https://www.linkedin.com/in/mohamad-alhajar/",
             imageUrl:
               "https://legmlweb.blob.core.windows.net/founders/Mo.jpeg?sp=r&st=2025-02-25T13:51:32Z&se=2028-02-25T21:51:32Z&spr=https&sv=2022-11-02&sr=c&sig=U%2F6ixpdRxLXda3wK9naR0mYYx6AfcAja0Kc4f0WF%2B5s%3D"
-          },
-          {
-            name: "Alexandre Lavallee",
-            position: "CEO & Founder",
-            linkText: "LinkedIn",
-            linkUrl: "https://www.linkedin.com/in/alexandrelavallee/",
-            imageUrl:
-              "https://legmlweb.blob.core.windows.net/founders/alex.jpeg?sp=r&st=2025-02-25T13:51:32Z&se=2028-02-25T21:51:32Z&spr=https&sv=2022-11-02&sr=c&sig=U%2F6ixpdRxLXda3wK9naR0mYYx6AfcAja0Kc4f0WF%2B5s%3D"
-          },
-          {
-            name: "Romain Crema",
-            position: "CSO & Founder",
-            linkText: "LinkedIn",
-            linkUrl: "https://www.linkedin.com/in/romaincremamodernselling/",
-            imageUrl:
-              "https://legmlweb.blob.core.windows.net/founders/Romain.jpeg?sp=r&st=2025-02-25T13:51:32Z&se=2028-02-25T21:51:32Z&spr=https&sv=2022-11-02&sr=c&sig=U%2F6ixpdRxLXda3wK9naR0mYYx6AfcAja0Kc4f0WF%2B5s%3D"
           }
         ]
       },

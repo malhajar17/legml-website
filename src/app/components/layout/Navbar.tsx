@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import { Sparkles, Menu } from "lucide-react";
-import { translations } from "../lib/translations";
+import { translations } from "../../lib/translations";
 
 interface NavbarProps {
   language: "fr" | "en";
@@ -57,18 +57,25 @@ export default function Navbar({
             legml.ai
           </div>
           {/* Desktop Links */}
+          {/* Desktop Links */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#" className={`transition-colors ${navLinkClass}`}>
+            <a href="/home" className={`transition-colors ${navLinkClass}`}>
               {t.nav.home}
             </a>
-            <a href="#" className={`transition-colors ${navLinkClass}`}>
+            <a href="/features" className={`transition-colors ${navLinkClass}`}>
               {t.nav.features}
             </a>
-            <a href="#" className={`transition-colors ${navLinkClass}`}>
+            <a href="/pricing" className={`transition-colors ${navLinkClass}`}>
               {t.nav.pricing}
             </a>
-            <a href="#" className={`transition-colors ${navLinkClass}`}>
+            <a href="/mo" className={`transition-colors ${navLinkClass}`}>
+              Mo'
+            </a>
+            <a href="/blog" className={`transition-colors ${navLinkClass}`}>
               {t.nav.blog}
+            </a>
+            <a href="/contact" className={`transition-colors ${navLinkClass}`}>
+              Contact
             </a>
           </div>
         </div>

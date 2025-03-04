@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { ThemeProvider } from "./components/layout/ThemeProvider";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "legml.ai – L’IA Souveraine pour Entreprises Françaises",
-  description: "Le grand modèle de langue, conçu pour la souveraineté et l’efficacité des entreprises en France et en Europe."
+  title: "legml.ai – L'IA Souveraine pour Entreprises Françaises",
+  description: "Le grand modèle de langue, conçu pour la souveraineté et l'efficacité des entreprises en France et en Europe."
 };
 
 
@@ -28,7 +29,9 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
